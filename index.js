@@ -15,9 +15,9 @@ inputForm.addEventListener('submit', (e) => {
             const arrPers = index.replace(/\n\r?/g, '\n').split('\n')[0].split(',')
             const template = (`
                 <tr style="height: 16pt;" height="21">
-                    <td class="xl66" style="color: white; background: #c00000; height: 16pt; width: 240px; border: none; text-align: left;" align="left">${arrPers[0]}</td>
-                    <td class="xl66" style="color: white; background: #c00000; width: 240px; border: none; text-align: left;" align="left">${arrPers[1]}</td>
-                    <td class="xl66" style="color: white; background: #c00000; width: 240px; border: none; text-align: left;" align="left">${arrPers[2]}</td>
+                    <td class="xl66" style="height: 16pt; width: 240px; border: none; text-align: left;" align="left">${arrPers[0]}</td>
+                    <td class="xl66" style="width: 240px; border: none; text-align: left;" align="left">${arrPers[1]}</td>
+                    <td class="xl66" style="width: 240px; border: none; text-align: left;" align="left">${arrPers[2]}</td>
                 </tr>
             `)
             console.log(template)
