@@ -24,13 +24,5 @@ inputForm.addEventListener('submit', (e) => {
             `)
         }
     )
-
-    /*console.log(`
-    <tr style="height: 16pt;" height="21">
-        <td class="xl66" style="color: white; background: #c00000; height: 16pt; width: 240px; border: none; text-align: left;" align="left">${rows[0]}</td>
-        <td class="xl66" style="color: white; background: #c00000; width: 240px; border: none; text-align: left;" align="left">${rows[1]}</td>
-        <td class="xl66" style="color: white; background: #c00000; width: 240px; border: none; text-align: left;" align="left">${rows[2]}</td>
-    </tr>
-    `)*/
     outputValue.value = rows
 })
