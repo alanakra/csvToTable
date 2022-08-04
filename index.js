@@ -2,7 +2,7 @@ const inputForm = document.getElementById('input-form')
 const outputForm = document.getElementById('output-form')
 const outputValue = document.getElementById('output-form')
 let firstLineOk = document.getElementById('firstLineOk').checked
-
+let finalTemplate = ""
 
 
 inputForm.addEventListener('submit', (e) => {
@@ -19,8 +19,8 @@ inputForm.addEventListener('submit', (e) => {
             	<td class="xl65" style="color: black; border: none; text-align: left; width: 240px;"><span style="text-align: start; letter-spacing: normal;">${arrPers[2]}</span></td>
         	</tr>
             `)
-            console.log(template)
+            finalTemplate += template
         },
     )
-    outputValue.value = rows
+    outputValue.value = finalTemplate
 })
