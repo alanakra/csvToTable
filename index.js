@@ -9,7 +9,6 @@ inputForm.addEventListener('submit', (e) => {
     e.preventDefault()
     const inputValue = document.getElementById('input-csv').value
     let rows = firstLineOk == true ? inputValue.replace(/\n\r?/g, '\n').split('\n') : inputValue.replace(/\n\r?/g, '\n').split('\n').slice(1)
-    console.log(rows)
     rows.forEach(
         function collectPerson (index) {
             const arrPers = index.replace(/\n\r?/g, '\n').split('\n')[0].split(',')
